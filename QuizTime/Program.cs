@@ -6,7 +6,15 @@ namespace QuizTime
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            TrueFalse q = new TrueFalse("Cameron is great");
+
+            Console.WriteLine(q.QuestionBody);
+            foreach (string i in q.PossibleAnswers)
+            {
+                Console.WriteLine(i);
+            }
+
+            Console.ReadLine();
         }
     }
 }
